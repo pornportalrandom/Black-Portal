@@ -1,0 +1,453 @@
+@font-face {
+ font-family: 'Museo Sans';
+ src: url('../fonts/museo-sans-300-webfont.eot');
+ src: url('../fonts/museo-sans-300-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/museo-sans-300-webfont.woff') format('woff'),  url('../fonts/museo-sans-300-webfont.ttf') format('truetype'),  url('../fonts/museo-sans-300-webfont.svg#museo-sans-300-webfont') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'Museo Sans';
+ src: url('../fonts/museo-sans-300-italic-webfont.eot');
+ src: url('../fonts/museo-sans-300-italic-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/museo-sans-300-italic-webfont.woff') format('woff'),  url('../fonts/museo-sans-300-italic-webfont.ttf') format('truetype'),  url('../fonts/museo-sans-300-italic-webfont.svg#museo-sans-300-italic-webfont') format('svg');
+ font-weight: normal;
+ font-style: italic;
+}
+@font-face {
+ font-family: 'Museo Sans';
+ src: url('../fonts/museo-sans-700-webfont.eot');
+ src: url('../fonts/museo-sans-700-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans-700-webfont.woff') format('woff'), url('../fonts/museo-sans-700-webfont.ttf') format('truetype'), url('../fonts/museo-sans-700-webfont.svg#museo-sans-700-webfont') format('svg');
+ font-weight: bold;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'Museo Sans';
+ src: url('../fonts/museo-sans-700-italic-webfont.eot');
+ src: url('../fonts/museo-sans-700-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans-700-italic-webfont.woff') format('woff'), url('../fonts/museo-sans-700-italic-webfont.ttf') format('truetype'), url('../fonts/museo-sans-700-italic-webfont.svg#museo-sans-700-italic-webfont') format('svg');
+ font-weight: bold;
+ font-style: italic;
+}
+/**
+ * ------------------------------------------------------ *
+ * Normalize
+ * ------------------------------------------------------ *
+ *
+ * Extract just the bits we need from:
+ * normalize.css v2.1.2 | MIT License | git.io/normalize
+ */
+/* Correct block element display < IE 10 */
+article, aside, details, figcaption, figure, footer, header, nav, section, summary {
+	display: block;
+}
+/* Correct inline-block element display < IE 10 */
+audio, canvas, video {
+	display: inline-block;
+}
+/* Prevent displaying audio w/o controls & remove excess height in iOS 5 */
+audio:not([controls]) {
+ display: none;
+ height: 0;
+}
+/* Correct hidden attribute display < IE 10 */
+[hidden] {
+ display: none;
+}
+/* Prevent iOS text size adjust after orientation change, without disabling user zoom */
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
+}
+/* Address outline inconsistency between Chrome and other browsers */
+a:focus {
+	outline: thin dotted;
+}
+/* Improve readability when focused and mouse hovered */
+a:active, a:hover {
+	outline: 0;
+}
+/* Address style set to bolder in Firefox 4+, Safari 5, and Chrome */
+b, strong {
+	font-weight: bold;
+}
+/* Address styling not present in Safari 5 and Chrome */
+dfn {
+	font-style: italic;
+}
+/* Address styling not present < IE 10 */
+mark {
+	background: #ff0;
+	color: #000;
+}
+/* Address inconsistent monospace font display */
+code, kbd, pre, samp {
+	font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
+	font-size: 1em;
+}
+/* Improve readability of pre-formatted text */
+pre {
+	white-space: pre-wrap;
+}
+/* Address inconsistent quotes */
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/* Address inconsistent font-size */
+small {
+	font-size: 0.875em; /* 14px / 16px */
+}
+/* Prevent sup and sub from affecting line-height */
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+/* Remove border */
+img {
+	border: 0;
+}
+/* Correct overflow displayed oddly in IE 9 */
+svg:not(:root) {
+ overflow: hidden;
+}
+/* Address margin not present < IE 10 & Safari 5 */
+figure {
+	margin: 0;
+}
+/* Define consistent border, margin, and padding */
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/* Correct color inheritance and remove padding */
+legend {
+	border: 0;
+	padding: 0;
+}
+/* Correct font inheritance & address inconsistent margins */
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+}
+/* Address Firefox 4+ setting line-height on input using !important in the UA stylesheet */
+button, input {
+	line-height: normal;
+}
+/* Address inconsistent text-transform */
+button, select {
+	text-transform: none;
+}
+/* Improve button cursor & correct inability to style buttons in iOS, preserving audio/video controls on Android */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+/* Reset default cursor for disabled elements */
+button[disabled], html input[disabled] {
+	cursor: default;
+}
+/* Remove excess padding < IE 10 */
+input[type="checkbox"], input[type="radio"] {
+	padding: 0;
+}
+/* Address appearance set to searchfield in Safari 5 & Chrome */
+input[type="search"] {
+	/*-webkit-appearance: textfield;*/
+	-webkit-appearance: none;
+}
+/* Remove inner padding & search cancel button in Safari 5 & Chrome on OS X */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+ -webkit-appearance: none;
+}
+/* Remove inner padding & border in Firefox 4+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+ border: 0;
+ padding: 0;
+}
+/* Improve readability & alignment & remove default scrollbar < IE 10 */
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+/* Remove spacing between cells */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**
+ * ------------------------------------------------------ *
+ * Base
+ *
+ * Adjust box model for all elements:
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * ------------------------------------------------------ *
+ */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	min-width: 300px;
+	height:100%;
+	font-family: 'Museo Sans', Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.25;
+	color: #6d6e70;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+	color: #de3723;
+}
+a:hover {
+	text-decoration: underline;
+}
+/**
+ * ------------------------------------------------------ *
+ * Typography
+ * ------------------------------------------------------ *
+ * 
+ * Body Text : 14/24, 16/24, 18/24, 20/24, 24/30;
+ * Metadata, Copyright, etc. : ;
+ * Headings  : 60/66, 48/54, 32/40, 24/30, 20/30, 18, 16;
+ */
+abbr {
+	border: 0;
+}
+p, ul, ol, dl {
+	margin: 0 0 1.5em;
+}
+ul, ol {
+	padding-left: 3em;
+}
+li ul, li ol {
+	margin-bottom: 0;
+}
+dd {
+	margin-left: 3em;
+}
+blockquote {
+	margin: 1.5em 3em;
+}
+pre {
+	margin: 1.5em 0;
+}
+p, ul, ol, dl, figure, pre, blockquote {
+	line-height: 1.5;
+}
+article {
+	max-width: 60em;
+	margin: auto;
+}
+hr {
+	border: none;
+	border-top: 1px solid #d6d6d6;
+	margin: 0 1em;
+}
+/* Default Headings : 32/40, 24/30, 20/30, 18/24, 16/24 */
+h1 {
+	font-size: 2em; /* 32px */
+	/* Inherited line-height of 1.25 = 40px */
+	margin: 1.25em 0 0;
+}
+h2, h3 {
+	font-size: 1.5em; /* 24px */
+	/* Inherited line-height of 1.25 = 30px */
+	font-weight: normal;
+	margin: 1.25em 0 0;
+}
+h4, .h4 {
+	font-size: 1.25em; /* 20px */
+	line-height: 1.5; /* 30px */
+	font-weight: bold;
+	margin: 1.5em 0 0;
+	margin: 0;
+}
+h5, .h5 {
+	font-size: 1.125em; /* 18px */
+	line-height: 1.3333333333; /* 24px */
+	margin: 1.3333333333em 0 0;
+}
+h6 {
+	font-size: 1em; /* 16px */
+	line-height: 1.5; /* 24px */
+	margin: 1.5em 0 0;
+}
+/* Headlines */
+.headline {
+	max-width: 87.5em;
+	padding-right: 1em;
+	padding-left: 1em;
+	margin: 3em auto 3em;
+}
+.headline h1, .headline h2 {
+	font-size: 1.5em; /* 24px */
+	font-weight: normal;
+	text-align: center;
+	margin: 0;
+}
+.headline p {
+	text-align: center;
+	margin: 0;
+}
+.light-grey {
+	color: #abadb0;
+}
+/**
+ * ------------------------------------------------------ *
+ * Grid
+ * ------------------------------------------------------ *
+ */
+.grid-row {
+	margin: 2em auto 0;
+}
+.grid-col {
+	padding: 0 1em;
+	margin: auto;
+}
+::-webkit-input-placeholder {
+ color:#bfbfbf;
+}
+:-moz-placeholder {
+ color:#bfbfbf;
+}
+::-moz-placeholder {
+ color:#bfbfbf;
+ opacity: 1; /* fixes inconsistent opacity in FF */
+}
+:-ms-input-placeholder {
+ color:#bfbfbf;
+}
+/**
+ * ------------------------------------------------------ *
+ * Utilities
+ * ------------------------------------------------------ *
+ */
+.center {
+	text-align: center;
+}
+/* Group content, aka clearfix */
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+/**
+ * ------------------------------------------------------ *
+ * Featured Item
+ *
+ * - Required center/left image
+ * - Image only displays above 800px
+ * ------------------------------------------------------ *
+ */
+.logo {
+	clear:both;
+	margin-bottom:30px;
+}
+.logo img {
+	width:219px;
+}
+.content-box {
+	position:absolute;
+	left:0;
+	top:50%;
+	width: 100%;
+	height: 300px;
+	margin-top:-150px;
+}
+.featured {
+	width: 100%;
+	height: 100%;
+	display:table;
+}
+.featured a {
+	white-space: nowrap;
+}
+.col-left {
+	display:table-cell;
+	width: 45%;
+	height: 100%;
+	vertical-align:middle;
+	text-align: right;
+}
+.col-left img {
+	width:300px;
+}
+.col-right {
+	display:table-cell;
+	width: 55%;
+	height: 100%;
+	vertical-align:middle;
+	text-align: left;
+}
+.content-wrap {
+	margin-left:20px;
+	margin-right:20px;
+}
+.featured.redirect h1 {
+	clear:both;
+	font-size:24px;
+	font-weight: 700;
+	margin-bottom:5px;
+}
+.featured.redirect p {
+	clear:both;
+	font-size:20px;
+	font-weight: 300;
+}
+.rocket-resp {
+	display:none;
+}
+@media only screen and (max-width: 860px) {
+.content-box {
+ position:relative;
+ left:0;
+ top:0;
+ width: 100%;
+ height:auto;
+ margin-top:50px;
+}
+.logo {
+ margin-bottom:70px;
+}
+.col-left {
+ display:none;
+}
+.col-right {
+ display:block;
+ clear:both;
+ float:left;
+ width: 100%;
+ text-align:center;
+}
+.rocket-resp {
+ display:block;
+}
+.rocket-resp img {
+ width:300px;
+}
+}
+@media only screen and (max-width: 380px) {
+.content-wrap {
+ margin-left:20px;
+ margin-right:20px;
+}
+.rocket-resp img {
+ width:100%;
+}
+}
